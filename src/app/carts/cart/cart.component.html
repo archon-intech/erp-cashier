@@ -1,0 +1,13 @@
+<div class="c-img col-span-2">
+  <img class="rounded-lg w-12 h-12" [src]="cart.img" alt="{{cart.title}}" />
+</div>
+<div class="c-detail col-span-4 flex-row">
+  <div class="cd-title font-semibold">{{cart.title}}</div>
+  <div class="cd-sku">{{cart.sku}}</div>
+  <div class="cd-qty">{{cart.brand}}</div>
+</div>
+<div class="c-price col-span-3 text-center">
+  <div class="cp-price mb-2">@{{cart.price}}</div>
+  <app-btn-qty [qty]="cart.qty" class="bg-white rounded-lg py-1 px-2 flex justify-center items-center gap-2"></app-btn-qty>
+</div>
+<div class="c-sum col-span-3 text-right text-base font-semibold">{{cart.qty * cart.price}}</div>

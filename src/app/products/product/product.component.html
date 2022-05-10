@@ -1,0 +1,10 @@
+<div class="img-wrap relative rounded-md mb-2 overflow-hidden">
+  <img class="p-img" [src]="product.img" alt="{{product.title}}"/>
+  <span class="p-price text-lg px-2 text-slate-100 absolute bottom-0 left-0 right-1/3 bg-gradient-to-r from-black via-black">{{product.price}}</span>
+</div>
+
+<div class="info-wrap relative text-sm">
+  <div class="p-title font-semibold text-black">{{product.title}}</div>
+  <div class="p-sku">@{{product.sku}}</div>
+  <div class="p-brand">{{product.brand}}</div>
+</div>

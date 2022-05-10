@@ -1,0 +1,11 @@
+<div class="title text-center py-3">
+  <h2 class="text-semibold">Keranjang Belanja</h2>
+</div>
+<app-cart class="grid grid-cols-12 gap-2 items-center bg-slate-100 rounded-lg my-2 p-2 text-xs"
+          [cart]="keranjang"
+          *ngFor="let keranjang of keranjangs"></app-cart>
+<div class="grid grid-cols-12 gap-2 items-center mx-2 my-2 p-2 text-2xl font-semibold">
+  <span class="col-span-4 ">Total</span>
+  <span class="col-span-8 text-[#809C6C] text-right">256000500</span>
+</div>
+<button class="w-full px-5 py-3 bg-[#809C6C] text-center rounded-lg text-white text-xl">Buat Pesanan</button>

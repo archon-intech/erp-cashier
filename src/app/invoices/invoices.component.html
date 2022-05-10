@@ -1,0 +1,6 @@
+<app-invoice
+  class="bg-slate-100 rounded-lg py-2 px-3 text-sm uppercase
+  grid grid-cols-[repeat(24,minmax(0,1fr))] gap-2 mb-3"
+  [invoice] = invoice
+  *ngFor="let invoice of invoices"
+></app-invoice>
